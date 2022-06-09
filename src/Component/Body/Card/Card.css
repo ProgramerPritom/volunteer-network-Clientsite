@@ -1,0 +1,33 @@
+
+
+.card-area{
+    border-radius: 20px;
+    /* border: 2px solid red; */
+}
+
+
+
+.img-area{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-button{
+    width: 100%;
+    border-radius: 0 0 10px 10px !important;
+    height: 60px !important;
+    /* border: none !important; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

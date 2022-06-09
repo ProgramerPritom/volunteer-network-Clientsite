@@ -1,0 +1,9 @@
+[
+    {"_id" : 1, "name" : "Festival Event", "description" : "A festival is an event ordinarily celebrated by a community and centering on some characteristic aspect of that community and its religion or cultures. It is often marked as a local or national holiday, mela, or eid.", "img" : "https://i.ibb.co/rtqPTf3/Festival-Event.jpg"},
+
+    {"_id" : 2, "name" : "Birthday Event", "description" : "Birthdays are the best kind of celebration. It has been another year of life for your or your loved one and that is certainly reason to party.", "img" : "https://i.ibb.co/cD6vdjP/Birthday-Event.jpg"},
+
+    {"_id" : 3, "name" : "Weddings Event", "description" : "Wedding Events Wedding days are the big day in the couple's life. If you have experienced the event going through process, then you must know about the huge responsibility behind it. The bride and groom are relying upon you for their very big day.", "img" : "https://i.ibb.co/Kmj0tGb/Wedding-Event.jpg"},
+
+    {"_id" : 4, "name" : "School Event", "description" : "Annual Event function is favourite for all Students and Teachers. Every organises Try to remember that special day.We are try to catch that special moment. ", "img" : "https://i.ibb.co/v4F8tFz/School-Event.jpg"}
+]

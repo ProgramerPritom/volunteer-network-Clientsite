@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Header.css'
 
@@ -20,8 +20,12 @@ const Header = () => {
       
     </Nav>
     <Nav>
-      <Nav.Link as={Link} to="/register">Register</Nav.Link>
-      <Nav.Link as={Link} to="/login">Login</Nav.Link>
+      <Nav.Link as={Link} to="/register">
+        <Button variant="primary" size="lg">Register</Button>
+      </Nav.Link>
+      <Nav.Link as={Link} to="/login">
+        <Button variant="secondary" size="lg">Login</Button>
+      </Nav.Link>
       
     </Nav>
   </Navbar.Collapse>

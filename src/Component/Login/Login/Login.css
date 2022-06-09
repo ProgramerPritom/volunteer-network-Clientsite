@@ -1,0 +1,36 @@
+
+
+.login-area{
+    border: 1px solid rgb(168, 166, 166);
+    width: 80%;
+    padding: 130px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 12px 12px 58px 30px rgba(168, 166, 166);
+}
+.account-create p{
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.login-google{
+    height: 60px;
+    width: 40%;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    border: 1px solid rgb(160, 158, 158);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.login-google p{
+    margin: 0!important;
+}
+.google-btn{
+    background-color: 0 !important;
+}
+.google-logo{
+    width: 30px;
+    margin-right: 50px;
+}
