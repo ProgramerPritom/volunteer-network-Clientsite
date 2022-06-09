@@ -1,3 +1,7 @@
 .logo-img{
-    width: 35%;
+    width: 40%;
+}
+.navbar-brand{
+    margin-right: 0px !important;
+    width: 50% !important;
 }

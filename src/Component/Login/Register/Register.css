@@ -1,0 +1,12 @@
+
+.register-area{
+    margin-top: 30px;
+    border-radius: 15px ;
+    padding: 20px;
+    box-shadow: 12px 12px 65px 20px rgba(168, 166, 166);
+}
+
+.form-control {
+    border: 0!important;
+    border-bottom: 2px solid gray !important;
+}

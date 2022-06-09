@@ -9,7 +9,7 @@ const Header = () => {
             <div className="navbar-section">
             <Navbar collapseOnSelect expand="lg" bg="transparent" variant="light">
   <Container>
-  <Navbar.Brand href="#home"><img className='logo-img' src='https://i.ibb.co/myWLX4k/Group-1329.png' alt="" /></Navbar.Brand>
+  <Navbar.Brand as={Link} to="/"><img className='logo-img' src='https://i.ibb.co/myWLX4k/Group-1329.png' alt="" /></Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
@@ -17,6 +17,7 @@ const Header = () => {
       <Nav.Link as={Link} to="/donation">Donation</Nav.Link>
       <Nav.Link as={Link} to="/event">Event</Nav.Link>
       <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
+      <Nav.Link as={Link} to="/add-event">Add</Nav.Link>
       
     </Nav>
     <Nav>

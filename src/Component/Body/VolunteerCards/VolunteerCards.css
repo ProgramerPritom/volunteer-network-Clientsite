@@ -1,3 +1,8 @@
+
+.search-form .form-control{
+    border: 2px solid gray !important;
+}
+
 .Volunteer-cards-area{
     display: grid;
     grid-template-columns: repeat(4,1fr);
