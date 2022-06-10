@@ -1,14 +1,20 @@
 
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import { toast, } from 'react-toastify';
+import { Link, useNavigate } from 'react-router-dom';
 import './Card.css';
 
 const Card = ({service}) => {
+    const navigate = useNavigate()
+    const handleEventBook = (id) =>{
+        navigate(`/event/${id}`);
+    }
     return (
         <div>
             <div className="card-area">
                 <img className='img-area' src={service.img} alt="" />
-                <Button className='card-button'>{service.name}</Button>
+                <Button onClick={() =>handleEventBook(service._id)} className='card-button'>{service.name}</Button>
             </div>
             
         </div>
