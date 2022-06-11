@@ -1,4 +1,12 @@
 .event-book-area{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    width: 60%;
+    grid-gap: 55px;
+    
+}
+.order-card{
+    box-shadow: 12px 12px 70px 10px rgba(168, 166, 166);
+    border-radius: 20px;
+    padding: 20px;
 }

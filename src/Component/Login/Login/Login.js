@@ -8,6 +8,7 @@ import Loading from '../Loading/Loading';
 const Login = () => {
     const navigate = useNavigate();
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+    console.log(user)
 
     if (user) {
         navigate('/home');

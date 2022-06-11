@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -8,10 +8,15 @@ import { toast } from 'react-toastify';
 
 
 import useServiceDetails from '../../../Hook/useServiceDetails';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../firebase.init';
 
 const Order = () => {
+    const [user] = useAuthState(auth);
+    
     const {id} = useParams();
     const [service] = useServiceDetails(id)
+    const navigate = useNavigate();
     const handleConfirm = () => {
         toast ('Successfully Event Book')
     }
@@ -19,11 +24,12 @@ const Order = () => {
         e.preventDefault();
         const name = e.target.name.value;
         const img = e.target.img.value;
-
+        const email = user?.email;
+        // console.log(name,email);
         fetch('http://localhost:5000/eventbooked', {
             method: 'POST',
             body: JSON.stringify({
-                name,img
+                name,img,email
             }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
@@ -32,7 +38,7 @@ const Order = () => {
             .then((response) => response.json())
             .then((data) => {
                 console.log(data)
-            
+                navigate('/home');
             });
 
     }
