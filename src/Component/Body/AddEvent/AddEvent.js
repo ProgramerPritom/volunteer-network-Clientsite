@@ -8,7 +8,7 @@ const AddEvent = () => {
         const description = event.target.description.value;
         const img = event.target.img.value;
 
-        fetch('http://localhost:5000/addevent', {
+        fetch('https://salty-meadow-55458.herokuapp.com/addevent', {
             method: 'POST',
             body: JSON.stringify({
                 name,description,img

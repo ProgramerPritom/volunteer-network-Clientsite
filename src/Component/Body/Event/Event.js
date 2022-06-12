@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import './Event.css';
 import { toast } from 'react-toastify';
+import Loading from '../../Login/Loading/Loading';
 
 
 const Event = () => {
@@ -13,7 +14,7 @@ const Event = () => {
     const handleDelete = id => {
         const confirmDlt = window.confirm('Are you want to Cancel Booking');
         if (confirmDlt) {
-            const url = `http://localhost:5000/eventbooked/${id}`;
+            const url = `https://salty-meadow-55458.herokuapp.com/eventbooked/${id}`;
             fetch(url,{
                 method: 'DELETE'
             })
@@ -32,6 +33,7 @@ const Event = () => {
             <div className='event-book-area mx-auto my-3'>
             
             {
+                orders == 0 ? <Loading></Loading> : 
                 orders.map(order => <>
                     <div className='order-card text-center d-flex justify-content-center mt-4' key={order._id}>
                     <Card style={{ width: '18rem' }}>

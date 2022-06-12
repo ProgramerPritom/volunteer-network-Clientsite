@@ -10,7 +10,7 @@ const useOders = () => {
    
     useEffect (() => {
         
-        fetch(`http://localhost:5000/eventbooked?email=${email}`)
+        fetch(`https://salty-meadow-55458.herokuapp.com/eventbooked?email=${email}`)
         .then(res => res.json())
         .then(data => setOrders(data));
     },[])

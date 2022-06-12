@@ -3,8 +3,8 @@ import { Spinner } from 'react-bootstrap';
 
 const Loading = () => {
     return (
-        <div>
-            <div style={{height :"300px"}} className="spinner-area d-flex justify-content-center align-items-center w-100">
+        <div className=''>
+            <div style={{height :"600px"}} className="spinner-area d-flex justify-content-center align-items-center w-100">
            <Spinner animation="grow" variant="success" />
            </div>
         </div>

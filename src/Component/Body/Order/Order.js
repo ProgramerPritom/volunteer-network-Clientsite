@@ -26,7 +26,7 @@ const Order = () => {
         const img = e.target.img.value;
         const email = user?.email;
         // console.log(name,email);
-        fetch('http://localhost:5000/eventbooked', {
+        fetch('https://salty-meadow-55458.herokuapp.com/eventbooked', {
             method: 'POST',
             body: JSON.stringify({
                 name,img,email

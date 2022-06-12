@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, FormControl, InputGroup } from 'react-bootstrap';
 import useServices from '../../../Hook/useServices';
+import Loading from '../../Login/Loading/Loading';
 import Card from '../Card/Card';
 import './VolunteerCards.css';
 
@@ -23,12 +24,16 @@ const VolunteerCards = () => {
             <Button>Search</Button>
         </InputGroup>
             </div>
-            <div className="Volunteer-cards-area">
+            
+                
+                <div className="Volunteer-cards-area">
                 
                 {
+                    services == 0 ? <Loading></Loading> :
                     services.map(service => <Card key={service._id} service = {service}></Card>)
                 }
             </div>
+            
         </div>
     );
 };

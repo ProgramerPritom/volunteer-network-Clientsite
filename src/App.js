@@ -12,6 +12,8 @@ import { ToastContainer } from 'react-toastify';
 import CardDetails from './Component/Body/CardDetails/CardDetails';
 import Order from './Component/Body/Order/Order';
 import RequireAuth from './Component/Login/RequireAuth/RequireAuth';
+import Footer from './Component/Footer/Footer';
+import Error from './Component/Login/Error/Error';
 
 
 
@@ -36,8 +38,9 @@ function App() {
        </RequireAuth>}></Route>
        <Route path='/login' element={<Login></Login>}></Route>
        <Route path='/register' element={<Register></Register>}></Route>
-       
+       <Route path='*' element={<Error></Error>}></Route>
      </Routes>
+     <Footer></Footer>
      <ToastContainer></ToastContainer>
     </div>
   );
